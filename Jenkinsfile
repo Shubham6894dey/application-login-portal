@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                powershell 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
     }
